@@ -61,12 +61,17 @@ fun QuadrantRowUp(modifier: Modifier = Modifier) {
         Column(
             verticalArrangement = Arrangement.Center,
             modifier = modifier
-                .fillMaxHeight(0.5f).background(colorLeft).padding(16.dp).weight(1f)
+                .fillMaxHeight(0.5f)
+                .background(colorLeft)
+                .padding(16.dp)
+                .weight(1f)
         ) {
             Text(
                 text = stringResource(R.string.text_composable),
                 fontWeight = FontWeight.Bold,
-                modifier = modifier.padding(bottom = 16.dp) .align(Alignment.CenterHorizontally)
+                modifier = modifier
+                    .padding(bottom = 16.dp)
+                    .align(Alignment.CenterHorizontally)
             )
             Text(
                 text = stringResource(R.string.description_text_composable),
@@ -76,13 +81,18 @@ fun QuadrantRowUp(modifier: Modifier = Modifier) {
         }
         Column(
             verticalArrangement = Arrangement.Center,
-            modifier = modifier.fillMaxHeight(0.5f).background(colorRight).padding(16.dp)
+            modifier = modifier
+                .fillMaxHeight(0.5f)
+                .background(colorRight)
+                .padding(16.dp)
                 .weight(1f)
         ) {
             Text(
                 text = stringResource(R.string.image_composable),
                 fontWeight = FontWeight.Bold,
-                modifier = modifier.padding(bottom = 16.dp).align(Alignment.CenterHorizontally)
+                modifier = modifier
+                    .padding(bottom = 16.dp)
+                    .align(Alignment.CenterHorizontally)
             )
             Text(
                 text = stringResource(R.string.description_image_composable),
